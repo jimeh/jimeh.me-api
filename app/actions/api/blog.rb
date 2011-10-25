@@ -3,8 +3,8 @@ module Api
 
     class Index < Base
       def start
-        posts = Post.posts.inject([]) do |result, (key, value)|
-          result << value.select { |k, _|
+        posts = Post.posts.keys.sort.inject([]) do |result, key|
+          result << Post[key].select { |k, _|
             [:id, :date, :title, :slug].include?(k)
           }
         end
