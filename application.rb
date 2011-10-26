@@ -19,7 +19,7 @@ module Emblog
 
     # Initialize the application
     def self.initialize!
-      Post.initialize!(File.join(self.root, '_posts'))
+      Post.initialize!(File.join(self.root, 'posts'))
     end
 
   end
