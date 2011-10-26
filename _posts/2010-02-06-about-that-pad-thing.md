@@ -1,5 +1,6 @@
 ---
 title: About That “Pad” Thing
+date: 2010-02-06T15:21:00+0200
 categories: [technology, apple, ipad]
 ---
 

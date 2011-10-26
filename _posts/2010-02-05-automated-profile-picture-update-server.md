@@ -1,5 +1,6 @@
 ---
 title: Automated Profile Picture Update Service?
+date: 2010-02-05T13:34:00+0200
 categories: [technology, web-service, idea]
 ---
 

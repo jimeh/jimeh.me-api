@@ -1,5 +1,6 @@
 ---
 title: "Concept: Decentralized Zero-Conf VPN"
+date: 2011-01-06T21:24:00+0000
 categories: [technology, concept, idea]
 ---
 

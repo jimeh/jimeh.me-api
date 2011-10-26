@@ -1,5 +1,6 @@
 ---
 title: My Life, 2010 And Beyond...
+date: 2010-04-25T10:55:00+0200
 categories: [personal]
 ---
 

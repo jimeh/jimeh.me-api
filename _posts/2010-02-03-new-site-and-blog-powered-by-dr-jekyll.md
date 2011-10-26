@@ -1,5 +1,6 @@
 ---
 title: New Site and Blog Powered by Dr. Jekyll
+date: 2010-02-03T03:21:00+0200
 categories: [technology, ruby, jekyll, git, rsync, disqus, font, design]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: New Avatar, Same Old Fugly Face
+date: 2010-02-05T12:48:00+0200
 categories: [personal]
 ---
 

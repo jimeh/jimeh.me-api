@@ -1,5 +1,6 @@
 ---
 title: Zynapse Is Out
+date: 2010-02-25T14:24:00+0200
 categories: [technology, web, php, rails]
 ---
 

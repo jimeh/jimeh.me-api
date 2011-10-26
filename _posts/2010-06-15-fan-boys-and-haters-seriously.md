@@ -1,5 +1,6 @@
 ---
 title: Fan Boys & Haters, Seriously?
+date: 2010-06-15T15:13:00+0200
 categories: [technology, social]
 ---
 
