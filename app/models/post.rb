@@ -38,20 +38,19 @@ class Post < Hash
 
     @file = file
 
-    self[:id] = uid
-    self[:date] = date
-    self[:slug] = slug
-
     load_and_parse
     render
   end
+
+  attr_reader :file
+  attr_reader :raw
 
   def uid
     @uid ||= Digest::MD5.hexdigest(filename.gsub(/\.md$/, ''))
   end
 
   def filename
-    @filename ||= File.basename(@file)
+    @filename ||= File.basename(file)
   end
 
   def date
@@ -65,12 +64,15 @@ class Post < Hash
   private
 
   def render
-    self[:body]   = markdown.render(@raw)
-    self[:source] = @raw
+    self[:id]     = uid
+    self[:date]   = date
+    self[:slug]   = slug
+    self[:body]   = markdown.render(raw)
+    self[:source] = raw
   end
 
   def load_and_parse
-    @raw = File.read(@file).strip
+    @raw = File.read(file).strip
     parse
   end
 
