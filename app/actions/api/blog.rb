@@ -28,7 +28,7 @@ module Api
 
       def check_post_id
         if !Post.posts.has_key?(params[:id])
-          halt 404, {'Content-Type' => 'application/json'}, "{}"
+          halt 404, {'Content-Type' => 'application/json; charset=utf-8'}, "{}"
         else
           yield
         end

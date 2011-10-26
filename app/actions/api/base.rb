@@ -4,7 +4,7 @@ module Api
   class Base < Cramp::Action
 
     def respond_with
-      [200, {'Content-Type' => 'application/json'}]
+      [200, {'Content-Type' => 'application/json; charset=utf-8'}]
     end
 
     private
