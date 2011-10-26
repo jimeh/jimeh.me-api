@@ -4,6 +4,7 @@ gem 'cramp'
 
 gem 'thin'
 gem 'foreman'
+gem 'heroku'
 
 gem 'http_router'
 gem 'async-rack'
