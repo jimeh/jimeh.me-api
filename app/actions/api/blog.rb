@@ -18,7 +18,7 @@ module Api
 
       def start
         post = Post[params[:id]]
-        post = post.reject { |k,v| k == :markdown } unless params[:markdown]
+        post = post.reject { |k,v| k == :source } unless params[:source]
 
         render_json(post)
         finish

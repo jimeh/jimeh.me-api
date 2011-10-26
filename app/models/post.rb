@@ -1,41 +1,16 @@
 require 'date'
 require 'yaml'
+
 require 'redcarpet'
 
-class Post
+class Post < Hash
 
   class << self
 
     def initialize!(root_path)
       @root_path = root_path
       Dir["#{root_path}/*.md"].each do |file|
-        post = {
-          :id    => nil,
-          :date  => nil,
-          :title => nil,
-          :html  => nil
-        }
-
-        id   = File.basename(file).gsub(/\.md$/, '')
-        date = Date.parse(id.match(/([\d]{4}-[\d]{2}-[\d]{2})/)[1])
-        slug = id.match(/[\d]{4}-[\d]{2}-[\d]{2}-(.+)/)[1]
-
-        content = File.read(file)
-        if matches = content.match(/^---\n(.*?)\n---\n(.*)/m)
-          YAML.load(matches[1]).each do |key, value|
-            post[key.to_sym] = value
-          end
-          content = matches[2].strip
-        end
-
-        post.merge!(
-          :id => id,
-          :date => date,
-          :slug => slug,
-          :markdown => content,
-          :html => markdown.render(content)
-        )
-
+        post = self.new(file)
         posts[post[:id]] = post
       end
     end
@@ -48,8 +23,6 @@ class Post
       @posts ||= {}
     end
 
-    private
-
     def markdown
       @markdown ||= ::Redcarpet::Markdown.new(Redcarpet::Render::HTML,
         :tables => true,
@@ -58,5 +31,67 @@ class Post
     end
 
   end # << self
+
+  def initialize(file)
+    set_required_keys
+
+    @file = file
+
+    self[:id] = uid
+    self[:date] = date
+    self[:slug] = slug
+
+    load_and_parse
+    render
+  end
+
+  def uid
+    @uid ||= filename.gsub(/\.md$/, '')
+  end
+
+  def filename
+    @filename ||= File.basename(@file)
+  end
+
+  def date
+    @date ||= Date.parse(filename.match(/^([\d]{4}-[\d]{2}-[\d]{2})/)[1])
+  end
+
+  def slug
+    @slug ||= filename.match(/[\d]{4}-[\d]{2}-[\d]{2}-(.+)\.md$/)[1]
+  end
+
+  private
+
+  def render
+    self[:body]   = markdown.render(@raw)
+    self[:source] = @raw
+  end
+
+  def load_and_parse
+    @raw = File.read(@file).strip
+    parse
+  end
+
+  def parse
+    if matches = @raw.match(/^---\n(.*?)\n---\n(.*)$/m)
+      YAML.load(matches[1]).each do |key, value|
+        self[key.to_sym] = value
+      end
+      @raw = matches[2].strip
+    end
+  end
+
+  def set_required_keys
+    self.merge!(
+      :id    => nil,
+      :date  => nil,
+      :title => nil,
+      :body  => nil)
+  end
+
+  def markdown
+    self.class.markdown
+  end
 
 end
