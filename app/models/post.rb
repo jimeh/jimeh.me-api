@@ -1,5 +1,6 @@
 require 'date'
 require 'yaml'
+require 'digest/md5'
 
 require 'redcarpet'
 
@@ -46,7 +47,7 @@ class Post < Hash
   end
 
   def uid
-    @uid ||= filename.gsub(/\.md$/, '')
+    @uid ||= Digest::MD5.hexdigest(filename.gsub(/\.md$/, ''))
   end
 
   def filename
