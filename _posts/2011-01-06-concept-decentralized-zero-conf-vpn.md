@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Concept: Decentralized Zero-Conf VPN"
 categories: [technology, concept, idea]
 ---
@@ -41,8 +40,6 @@ To me, the coolest and most interesting point is piggybacking on existing BitTor
 That's why I'm writing this post. I'm hoping to get some feedback, suggestions, insults, and ideas from people who are smarter, and know a lot more about these kind of technologies than I do.
 
 In terms of an actual implementation, personally I would love to build this thing. But my networking and low-level programming skills are not very great at all, it would take some time before I could have anything presentable. But if someone else might be interested in starting it, I would very much like to be part of the effort, in any way I can till I've gained the required skills.
-
-
 
 
 [hamachi]: http://en.wikipedia.org/wiki/Hamachi_%28software%29

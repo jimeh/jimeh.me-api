@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "LiteMySQL: ActiveRecord's Little Brother"
 categories: [technology, web, database, php]
 ---
@@ -8,16 +7,16 @@ Ever needed a quick and lightweight MySQL PHP library for some small single/mult
 
 So what if you could do something like this:
 
-{% highlight php %}
+```php
 <?php
 $sql = new litemysql('host', 'username', 'password', 'testdb', 'books');
 $books = $sql->find_all(array("author" => "John Twelve Hawks"));
 ?>
-{% endhighlight %}
+```
 
 Rather than something like this:
 
-{% highlight php %}
+```php
 <?php
 $db = mysql_connect("host", "username", "password");
 if (!$db) die("Could not connect: " . mysql_error());
@@ -29,7 +28,7 @@ while ($row = mysql_fetch_assoc($result)) {
     $books[] = $row;
 }
 ?>
-{% endhighlight %}
+```
 
 About two years ago, I found myself in need of just such a small, lightweight library. There were full ORMs like [ADOdb][] and others available, but they were serious overkill for the kind of simple stuff I needed. After some googling, I noticed there didn't seem to be any in-between libraries. Either you had to go for a whole jumbo jet, or start folding your own paper airplanes, and I didn't like either option. I just wanted to grab existing paper airplanes, and start throwing them in the direction I needed them to go.
 
@@ -40,10 +39,6 @@ And that's how I started building [LiteMySQL][]. Rather than building it from th
 After close to a year of being ignored, I recently spent an afternoon fixing some long-standing bugs, migrating to [GitHub][], and writing some decent documentation for the project.
 
 You can read more, and download the library [here][litemysql].
-
-
-
-
 
 
 [zynapse]: http://github.com/jimeh/zynapse

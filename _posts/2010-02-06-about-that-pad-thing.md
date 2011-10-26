@@ -1,5 +1,4 @@
 ---
-layout: post
 title: About That “Pad” Thing
 categories: [technology, apple, ipad]
 ---

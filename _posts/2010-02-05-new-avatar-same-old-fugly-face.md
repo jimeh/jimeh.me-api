@@ -1,5 +1,4 @@
 ---
-layout: post
 title: New Avatar, Same Old Fugly Face
 categories: [personal]
 ---
@@ -23,7 +22,6 @@ Because I'm a perfectionist and decent bit insane, here's the 50x50 pixel versio
 </p>
 
 And incase you're wondering, I'm 18 or 19 in the old photo, and 24 in the new one. If I shave though I can easily fool people into believing that I'm 17. In fact, some people think I am 17 :P... I guess I'll appreciate it more when I'm 30-40 and people think I'm 26, hehe.
-
 
 
 [fancybox]: http://fancybox.net/

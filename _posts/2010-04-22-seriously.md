@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Seriously?
 categories: [personal, humor]
 ---

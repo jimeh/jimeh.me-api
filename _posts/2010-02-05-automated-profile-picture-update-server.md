@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Automated Profile Picture Update Service?
 categories: [technology, web-service, idea]
 ---
@@ -17,7 +16,6 @@ A service which automagically just updates your Facebook, Twitter, Flickr, YouTu
 * Will people actually trust such a service with passwords for all of their online social networking accounts?
 
 The later problem, trust, is definitely the biggest one. And I'm not sure you could overcome it unless the service is officially sponsored and/or operated by Google or somebody. I do think it could be a fun project to undertake, but I think it's pretty doomed right from the start unfortunately. Although if I updated my profile pictures more than once every 4-5 years, I might just build a prototype for myself at least.
-
 
 
 [avatar]: http://jimeh.me/blog/2010/02/05/new-avatar-same-old-fugly-face/

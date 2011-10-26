@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Fan Boys & Haters, Seriously?
 categories: [technology, social]
 ---

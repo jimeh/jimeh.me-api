@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Get YouTube Video Bookmarklet
 categories: [technology, youtube, bookmarklet]
 ---

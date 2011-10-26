@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How Are You?
 categories: [personal, technology, humor]
 ---

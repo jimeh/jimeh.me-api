@@ -1,5 +1,4 @@
 ---
-layout: post
 title: My Life, 2010 And Beyond...
 categories: [personal]
 ---
@@ -37,11 +36,6 @@ I've been offered €850 per month for jobs which I was beyond overqualified for
 For these reasons, and more personal reasons, the thought of moving to say, San Francisco, is really starting to grow on me. I want change, I wanna see a different culture, be somewhere else, do something interesting, hopefully even something which I truly love doing. If I'll go through with these thoughts though, I don't know. This summer and autumn a lot of things will be happening. I'll see how things go with the new company and project we're starting. How things go with a few other projects I'm working on. And how I feel after the summer and towards the end of the year.
 
 However, I do believe I'm gonna start asking around for work. Even if it's for next year, I'm hoping to get enough feedback (and maybe even job offers) so I can get a good idea of what I'd be looking at if I decide to go for it.
-
-
-
-
-
 
 
 [erlang-factory]: http://www.erlang-factory.com/conference/London2009/speakers/jimmyhrberg

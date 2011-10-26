@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Built-in Sudo for Ruby Command-Line Tools
 categories: [technology, ruby, git, gist]
 ---
@@ -12,13 +11,13 @@ A more elegant solution might be what the [Fink Project][fink] is doing with the
 
 A while back I was working on something which the best solution was to make sure the tool always runs as root. To get identical functionality as Fink, I wrote the very simple method shown below:
 
-{% highlight ruby %}
+```ruby
 def sudome
   if ENV["USER"] != "root"
     exec("sudo #{ENV['_']} #{ARGV.join(' ')}")
   end
 end
-{% endhighlight %}
+```
 
 Simply call `sudome` as early as possible in your code. If needed it will re-run your script with `sudo`, requiring the user to type his password, at which point your script then has full root access to the system.
 

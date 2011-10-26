@@ -1,5 +1,4 @@
 ---
-layout: post
 title: To Caffeinate, Or Not To Caffeinate?
 categories: [personal, productivity]
 ---
@@ -22,7 +21,7 @@ So let's jump to last spring, April 16th 2009 to be exact. While on a road trip,
 
 After the weekend ended, I kept away from caffeine, and around day three or four, I started getting light headaches multiple times per day, everyday. And I **never** have headaches, except for when I'm dead sick with some flu so I can hardly stand on my own two feet. So I figured that the headaches were from caffeine [withdrawal][]. According to Wikipedia, withdrawal symptoms can last for one to five days. My headaches didn't let up for about two weeks.
 
-## The Aftermath 
+## The Aftermath
 
 I didn't drink a single drop of caffeine of any form for the next two months. And since then, it's a rare event which generally only happens when I go to the cinema and buy popcorn and Coke for the movie. I generally feel better, I think. I'm still generally tired throughout the day cause I don't get enough sleep, but I never get the deep end energy swings I used to get if I didn't have any Coke for a while.
 
@@ -39,7 +38,6 @@ If you do consume a lot of caffeine, I'd suggest you try quitting cold turkey st
 I bought a bottle of Coke the other day, cause I felt like having some. After half a glass, I realized that I don't really like the taste of it anymore. So this bottle will probably sit in my fridge indefinitely, and might be the last bottle I ever buy for myself.
 
 Ten months after quitting Coca Cola, I don't like the taste anymore. It's lame, but for me it's a pretty big event, as I used to consider Coke the best tasting thing on the planet in liquid form.
-
 
 
 [withdrawal]: http://en.wikipedia.org/wiki/Caffeine#Tolerance_and_withdrawal

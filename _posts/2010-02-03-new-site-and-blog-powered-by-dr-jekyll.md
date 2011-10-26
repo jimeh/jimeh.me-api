@@ -1,5 +1,4 @@
 ---
-layout: post
 title: New Site and Blog Powered by Dr. Jekyll
 categories: [technology, ruby, jekyll, git, rsync, disqus, font, design]
 ---
@@ -51,7 +50,6 @@ The two fonts I'm using are [Colaborate][] for body text, and [DejaVu Sans Mono]
 ## The End
 
 > {insert [yo mamma joke][yomama] here}. Have a nice day.
-
 
 
 [heartb.it]: http://heartb.it/

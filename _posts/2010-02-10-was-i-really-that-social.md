@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Was I Really “That” Social?
 categories: [personal, technology, social]
 ---

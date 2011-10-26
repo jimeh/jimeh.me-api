@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Zynapse Is Out
 categories: [technology, web, php, rails]
 ---
@@ -9,4 +8,3 @@ So I finally bit off my own sense of perfection in regards to my Zynapse web-dev
 Now after close to two years of hardly working on it, and doing most things with Ruby on Rails, I've decided to push it up on GitHub as is.
 
 So check out [Zynapse](http://github.com/jimeh/zynapse) on GitHub if you're interested.
-

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: JavaScript Performance Wars
 categories: [technology, javascript, performance, web-browser]
 ---
