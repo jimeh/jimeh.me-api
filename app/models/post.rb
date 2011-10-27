@@ -28,6 +28,10 @@ class Post < Hash
       @posts ||= {}
     end
 
+    def categories
+      @categories ||= {}
+    end
+
     def markdown
       @markdown ||= ::Redcarpet::Markdown.new(Redcarpet::Render::HTML,
         :tables => true,
@@ -44,6 +48,7 @@ class Post < Hash
 
     load_and_parse
     render
+    populate_categories
   end
 
   attr_reader :file
@@ -73,6 +78,15 @@ class Post < Hash
   def load_and_parse
     @raw = File.read(file).strip
     parse
+  end
+
+  def populate_categories
+    if self[:categories]
+      self[:categories].each do |cat|
+        self.class.categories[cat.to_sym] ||= []
+        self.class.categories[cat.to_sym] << self
+      end
+    end
   end
 
   def parse

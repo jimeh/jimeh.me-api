@@ -4,8 +4,12 @@
 HttpRouter.new do
 
   # API Routes
-  get('/blog').to(Api::Blog::Index)
-  get('/blog/:id').to(Api::Blog::Show)
+  get('/posts').to(Api::Blog::Index)
+
+  get('/posts/categories').to(Api::Blog::CategoryIndex)
+  get('/posts/categories/:id').to(Api::Blog::CategoryShow)
+
+  get('/posts/:id').to(Api::Blog::Show)
 
   # Splash
   add('/').to(Api::Root)
