@@ -78,7 +78,7 @@ class Post < Hash
   end
 
   def slug
-    @slug ||= filename.match(/^(.+)\.md$/)[1]
+    @slug ||= filename.match(/^(?:\d{4}-\d{2}-\d{2}-|)(.+)\.md$/)[1]
   end
 
   private
