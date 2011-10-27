@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'bundler'
 
+$:.unshift File.expand_path('..', __FILE__)
+
 module Emblog
   class Application
 

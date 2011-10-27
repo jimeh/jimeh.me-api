@@ -1,3 +1,5 @@
+require 'app/actions/api/base'
+
 module Api
   class Root < Base
 
