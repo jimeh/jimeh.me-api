@@ -46,26 +46,21 @@ class Post < Hash
   attr_reader :raw
 
   def uid
-    @uid ||= Digest::MD5.hexdigest(filename.gsub(/\.md$/, ''))
+    @uid ||= Digest::MD5.hexdigest(slug)
   end
 
   def filename
     @filename ||= File.basename(file)
   end
 
-  def date
-    @date ||= Date.parse(filename.match(/^([\d]{4}-[\d]{2}-[\d]{2})/)[1])
-  end
-
   def slug
-    @slug ||= filename.match(/[\d]{4}-[\d]{2}-[\d]{2}-(.+)\.md$/)[1]
+    @slug ||= filename.match(/^(.+)\.md$/)[1]
   end
 
   private
 
   def render
     self[:id]     = uid
-    self[:date]   = date
     self[:slug]   = slug
     self[:body]   = markdown.render(raw)
     self[:source] = raw

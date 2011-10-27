@@ -1,6 +1,6 @@
 ---
 title: JavaScript Performance Wars
-date: 2010-02-19T23:10:00+0200
+date: 2010-02-19 23:10:00 +0200
 categories: [technology, javascript, performance, web-browser]
 ---
 

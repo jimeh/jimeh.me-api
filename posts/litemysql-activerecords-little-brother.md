@@ -1,6 +1,6 @@
 ---
 title: "LiteMySQL: ActiveRecord's Little Brother"
-date: 2010-04-23T03:23:00+0200
+date: 2010-04-23 03:23:00 +0200
 categories: [technology, web, database, php]
 ---
 

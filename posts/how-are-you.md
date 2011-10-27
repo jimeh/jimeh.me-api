@@ -1,6 +1,6 @@
 ---
 title: How Are You?
-date: 2010-02-16T17:46:00+0200
+date: 2010-02-16 17:46:00 +0200
 categories: [personal, technology, humor]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Seriously?
-date: 2010-04-22T11:52:00+0200
+date: 2010-04-22 11:52:00 +0200
 categories: [personal, humor]
 ---
 

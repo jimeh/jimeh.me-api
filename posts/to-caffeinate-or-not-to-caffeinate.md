@@ -1,6 +1,6 @@
 ---
 title: To Caffeinate, Or Not To Caffeinate?
-date: 2010-02-14T21:29:00+0200
+date: 2010-02-14 21:29:00 +0200
 categories: [personal, productivity]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Get YouTube Video Bookmarklet
-date: 2010-05-02T14:22:00+0200
+date: 2010-05-02 14:22:00 +0200
 categories: [technology, youtube, bookmarklet]
 ---
 

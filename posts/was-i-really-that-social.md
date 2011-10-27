@@ -1,6 +1,6 @@
 ---
 title: Was I Really “That” Social?
-date: 2010-02-10T12:53:00+0200
+date: 2010-02-10 12:53:00 +0200
 categories: [personal, technology, social]
 ---
 

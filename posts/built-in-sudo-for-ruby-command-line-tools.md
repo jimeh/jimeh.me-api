@@ -1,6 +1,6 @@
 ---
 title: Built-in Sudo for Ruby Command-Line Tools
-date: 2010-02-22T11:04:00+0200
+date: 2010-02-22 11:04:00 +0200
 categories: [technology, ruby, git, gist]
 ---
 
