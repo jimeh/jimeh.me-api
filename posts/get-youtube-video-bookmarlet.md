@@ -1,7 +1,7 @@
 ---
 title: Get YouTube Video Bookmarklet
 date: 2010-05-02 14:22:00 +0200
-categories: [technology, youtube, bookmarklet]
+tags: [technology, youtube, bookmarklet]
 ---
 
 There's a few ways to download videos off of [YouTube][], my favorite is using a bookmarklet which injects a link onto the page to download the MP4 version of the video. The best of these bookmarklets was by someone over at the [Google System Blog][gsb], it was well maintained and all. Unfortunately, the post about their bookmarklet has been deleted, and as such, it hasn't been updated for the new video page layout YouTube switched to a few weeks back.

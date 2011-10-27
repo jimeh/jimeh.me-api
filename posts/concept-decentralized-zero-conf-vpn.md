@@ -1,7 +1,7 @@
 ---
 title: "Concept: Decentralized Zero-Conf VPN"
 date: 2011-01-06 21:24:00 +0000
-categories: [technology, concept, idea]
+tags: [technology, concept, idea]
 ---
 
 Imagine a new kind of VPN service which doesn't require any kind of configuration and magically just works without a central server.

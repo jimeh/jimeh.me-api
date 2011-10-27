@@ -1,7 +1,7 @@
 ---
 title: JavaScript Performance Wars
 date: 2010-02-19 23:10:00 +0200
-categories: [technology, javascript, performance, web-browser]
+tags: [technology, javascript, performance, web-browser]
 ---
 
 Is the difference between [Chrome][]'s [V8][] engine, and [WebKit][]'s [SquirrelFish Extreme][sfx] (SFX for short) significant enough that we need to care if we use Chrome or Safari/WebKit?

@@ -1,7 +1,7 @@
 ---
 title: My Life, 2010 And Beyond...
 date: 2010-04-25 10:55:00 +0200
-categories: [personal]
+tags: [personal]
 ---
 
 We're 4 months into this year, and somehow I've already got more stories to tell from this year than 2009. And 2009 was a pretty eventful year with me spending a week in London speaking at  the [Erlang Factory][erlang-factory] conference, five weeks in Palo Alto as part of Facebook's [fbFund][] seed fund, and finally quitting my job in November for many different reasons, one of which to pursue a freelance career.

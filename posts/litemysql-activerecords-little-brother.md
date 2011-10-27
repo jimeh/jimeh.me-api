@@ -1,7 +1,7 @@
 ---
 title: "LiteMySQL: ActiveRecord's Little Brother"
 date: 2010-04-23 03:23:00 +0200
-categories: [technology, web, database, php]
+tags: [technology, web, database, php]
 ---
 
 Ever needed a quick and lightweight MySQL PHP library for some small single/multi page project? Pulling out a full ORM is just overkill, but writing the PHP code needed to connect to the server, run a query, and process the results is a lot of hassle? I thought so. I've been there too.

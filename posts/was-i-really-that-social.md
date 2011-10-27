@@ -1,7 +1,7 @@
 ---
 title: Was I Really “That” Social?
 date: 2010-02-10 12:53:00 +0200
-categories: [personal, technology, social]
+tags: [personal, technology, social]
 ---
 
 As some of you might have noticed the last couple of days, I haven't been online much on IM networks. I'm not sure what originally kept me from launching Adium the other day, but along the way I've come to a realization.

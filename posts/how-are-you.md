@@ -1,7 +1,7 @@
 ---
 title: How Are You?
 date: 2010-02-16 17:46:00 +0200
-categories: [personal, technology, humor]
+tags: [personal, technology, humor]
 ---
 
     *** Initializing analytics system.

@@ -6,8 +6,8 @@ HttpRouter.new do
   # API Routes
   get('/posts').to(Api::Blog::Index)
 
-  get('/posts/categories').to(Api::Blog::CategoryIndex)
-  get('/posts/categories/:id').to(Api::Blog::CategoryShow)
+  get('/posts/tags').to(Api::Blog::TagIndex)
+  get('/posts/tags/:name').to(Api::Blog::ShowTag)
 
   get('/posts/:id').to(Api::Blog::Show)
 

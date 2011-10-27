@@ -1,7 +1,7 @@
 ---
 title: Seriously?
 date: 2010-04-22 11:52:00 +0200
-categories: [personal, humor]
+tags: [personal, humor]
 ---
 
 Here I am, on a small little island in the middle of nowhere, a 9 hour ferry trip from Athens. There are no ferries for another 24 hours, and I've got an eye exam in 12 hours, which I've waited for the past two months.

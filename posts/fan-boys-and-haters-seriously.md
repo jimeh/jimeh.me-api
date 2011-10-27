@@ -1,7 +1,7 @@
 ---
 title: Fan Boys & Haters, Seriously?
 date: 2010-06-15 15:13:00 +0200
-categories: [technology, social]
+tags: [technology, social]
 ---
 
 Fan Boys and Haters have been equally annoying me as of late. The most common claim is that their favorite company is good, while all others are evil. This is simply bullshit.

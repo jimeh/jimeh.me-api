@@ -1,7 +1,7 @@
 ---
 title: Automated Profile Picture Update Service?
 date: 2010-02-05 13:34:00 +0200
-categories: [technology, web-service, idea]
+tags: [technology, web-service, idea]
 ---
 
 After I updated my [profile picture][avatar] today, a friend of mine [responded][tweet] with:

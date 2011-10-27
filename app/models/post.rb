@@ -28,8 +28,8 @@ class Post < Hash
       @posts ||= {}
     end
 
-    def categories
-      @categories ||= {}
+    def tags
+      @tags ||= {}
     end
 
     def markdown
@@ -56,7 +56,7 @@ class Post < Hash
 
     load_and_parse
     render
-    populate_categories
+    render_tags
   end
 
   attr_reader :file
@@ -88,11 +88,11 @@ class Post < Hash
     parse
   end
 
-  def populate_categories
-    if self[:categories]
-      self[:categories].each do |cat|
-        self.class.categories[cat.to_sym] ||= []
-        self.class.categories[cat.to_sym] << self
+  def render_tags
+    if self[:tags]
+      self[:tags].each do |cat|
+        self.class.tags[cat.to_sym] ||= []
+        self.class.tags[cat.to_sym] << self
       end
     end
   end

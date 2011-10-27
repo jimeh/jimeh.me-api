@@ -1,7 +1,7 @@
 ---
 title: About That “Pad” Thing
 date: 2010-02-06 15:21:00 +0200
-categories: [technology, apple, ipad]
+tags: [technology, apple, ipad]
 ---
 
 So I was gonna write a post with my opinions about the iPad, but a cup of tea and staring at wall of wet paint is almost more tempting. If you don't get why the iPad is important, and why it will succeed, I'm not even gonna try convincing you otherwise, time will just prove you wrong and make you feel stupid.

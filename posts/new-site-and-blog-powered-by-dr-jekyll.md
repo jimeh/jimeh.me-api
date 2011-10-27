@@ -1,7 +1,7 @@
 ---
 title: New Site and Blog Powered by Dr. Jekyll
 date: 2010-02-03 03:21:00 +0200
-categories: [technology, ruby, jekyll, git, rsync, disqus, font, design]
+tags: [technology, ruby, jekyll, git, rsync, disqus, font, design]
 ---
 
 I finally found some time to rebuild my site, and add a blog. I'm also working on a portfolio, which I will probably be putting up on [heartb.it][]. I haven't really decided how I'm gonna make the split between my personal site and work portfolio yet though.

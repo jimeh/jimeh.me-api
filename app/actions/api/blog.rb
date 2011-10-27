@@ -38,22 +38,22 @@ module Api
     end # Show
 
 
-    class CategoryIndex < Base
+    class TagIndex < Base
       def start
-        categories = Post.categories.inject({}) do |result, (key, posts)|
+        tags = Post.tags.inject({}) do |result, (key, posts)|
           result[key] = {:post_count => posts.size}
           result
         end
-        render_json(Hash[categories.sort])
+        render_json(Hash[tags.sort])
         finish
       end
-    end # CategoryIndex
+    end # TagIndex
 
-    class CategoryShow < Base
-      before_start :check_category_id
+    class ShowTag < Base
+      before_start :check_tag_name
 
       def start
-        posts = Post.categories[params[:id].to_sym].inject([]) do |result, post|
+        posts = Post.tags[params[:name].to_sym].inject([]) do |result, post|
           result << post.select { |k, _|
             [:id, :date, :title, :slug].include?(k)
           }
@@ -63,14 +63,14 @@ module Api
         finish
       end
 
-      def check_category_id
-        if !Post.categories.has_key?(params[:id].to_sym)
+      def check_tag_id
+        if !Post.tags.has_key?(params[:name].to_sym)
           halt 404, {'Content-Type' => 'application/json; charset=utf-8'}, "{}"
         else
           yield
         end
       end
-    end # CategoryShow
+    end # ShowTag
 
   end
 end
