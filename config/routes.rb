@@ -7,7 +7,7 @@ HttpRouter.new do
   get('/posts').to(Api::Blog::Index)
 
   get('/posts/tags').to(Api::Blog::TagIndex)
-  get('/posts/tags/:name').to(Api::Blog::ShowTag)
+  get('/posts/tags/:id').to(Api::Blog::ShowTag)
 
   get('/posts/:id').to(Api::Blog::Show)
 

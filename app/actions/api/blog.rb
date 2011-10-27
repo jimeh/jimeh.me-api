@@ -50,10 +50,10 @@ module Api
     end # TagIndex
 
     class ShowTag < Base
-      before_start :check_tag_name
+      before_start :check_tag_id
 
       def start
-        posts = Post.tags[params[:name].to_sym].inject([]) do |result, post|
+        posts = Post.tags[params[:id].to_sym].inject([]) do |result, post|
           result << post.select { |k, _|
             [:id, :date, :title, :slug].include?(k)
           }
@@ -64,7 +64,7 @@ module Api
       end
 
       def check_tag_id
-        if !Post.tags.has_key?(params[:name].to_sym)
+        if !Post.tags.has_key?(params[:id].to_sym)
           halt 404, {'Content-Type' => 'application/json; charset=utf-8'}, "{}"
         else
           yield
