@@ -14,6 +14,7 @@ class Post < Hash
         post = self.new(file)
         posts[post[:id]] = post
       end
+      sort_tag_index
     end
 
     def all
@@ -45,6 +46,12 @@ class Post < Hash
         pre.parent.replace Pygmentize.process(pre.text.rstrip, pre[:class])
       end
       doc.search('//body').children.to_s
+    end
+
+    def sort_tag_index
+      tags.each do |key, posts|
+        posts.sort! { |a,b| a[:date] <=> b[:date] }
+      end
     end
 
   end # << self
