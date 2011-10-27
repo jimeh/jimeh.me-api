@@ -1,13 +1,13 @@
-source :rubygems
+source 'http://rubygems.org/'
 
 gem 'cramp'
+gem 'http_router'
+gem 'async-rack'
 
 gem 'thin'
 gem 'foreman'
 gem 'heroku'
 
-gem 'http_router'
-gem 'async-rack'
 gem 'yajl-ruby'
 gem 'redcarpet', '~> 2.0.0b'
 gem 'pygmentize'
