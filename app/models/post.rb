@@ -16,6 +16,10 @@ class Post < Hash
       end
     end
 
+    def all
+      @all ||= posts.values.sort {|a,b| a[:date] <=> b[:date]}
+    end
+
     def [](id)
       posts[id]
     end
