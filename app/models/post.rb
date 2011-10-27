@@ -39,6 +39,14 @@ class Post < Hash
         :space_after_headers => true)
     end
 
+    def syntax_highlighter(html)
+      doc = Nokogiri::HTML(html)
+      doc.search("//pre/code[@class]").each do |pre|
+        pre.parent.replace Pygmentize.process(pre.text.rstrip, pre[:class])
+      end
+      doc.search('//body').children.to_s
+    end
+
   end # << self
 
   def initialize(file)
@@ -71,7 +79,7 @@ class Post < Hash
   def render
     self[:id]     = uid
     self[:slug]   = slug
-    self[:body]   = markdown.render(raw)
+    self[:body]   = self.class.syntax_highlighter(markdown.render(raw))
     self[:source] = raw
   end
 

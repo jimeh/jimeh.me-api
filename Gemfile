@@ -10,6 +10,8 @@ gem 'http_router'
 gem 'async-rack'
 gem 'yajl-ruby'
 gem 'redcarpet', '~> 2.0.0b'
+gem 'pygmentize'
+gem 'nokogiri'
 
 # Using Fibers + async callbacks to emulate synchronous programming
 # gem 'em-synchrony'
