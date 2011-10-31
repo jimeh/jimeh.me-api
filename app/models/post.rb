@@ -69,15 +69,11 @@ class Post < Hash
   attr_reader :file
   attr_reader :raw
 
-  def uid
-    @uid ||= Digest::MD5.hexdigest(slug)
-  end
-
   def filename
     @filename ||= File.basename(file)
   end
 
-  def slug
+  def uid
     @slug ||= filename.match(/^(?:\d{4}-\d{2}-\d{2}-|)(.+)\.md$/)[1]
   end
 
@@ -85,7 +81,6 @@ class Post < Hash
 
   def render
     self[:id]     = uid
-    self[:slug]   = slug
     self[:body]   = self.class.syntax_highlighter(markdown.render(raw))
     self[:source] = raw
   end
