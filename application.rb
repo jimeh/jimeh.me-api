@@ -22,6 +22,7 @@ module Emblog
     # Initialize the application
     def self.initialize!
       Post.initialize!(File.join(self.root, 'posts'))
+      DataSet.initialize!(File.join(self.root, 'datasets'))
     end
 
   end

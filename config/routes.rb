@@ -9,5 +9,7 @@ HttpRouter.new do
   get('/posts/tags/:id').to(Posts::ShowTag)
   get('/posts/:id').to(Posts::Show)
 
+  # Data Sets
+  get('/*id').to(DataSets::Show)
 
 end
