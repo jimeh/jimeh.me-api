@@ -3,15 +3,11 @@
 
 HttpRouter.new do
 
-  # API Routes
-  get('/posts').to(Api::Blog::Index)
+  # Posts
+  get('/posts').to(Posts::Index)
+  get('/posts/tags').to(Posts::TagIndex)
+  get('/posts/tags/:id').to(Posts::ShowTag)
+  get('/posts/:id').to(Posts::Show)
 
-  get('/posts/tags').to(Api::Blog::TagIndex)
-  get('/posts/tags/:id').to(Api::Blog::ShowTag)
-
-  get('/posts/:id').to(Api::Blog::Show)
-
-  # Splash
-  add('/').to(Api::Root)
 
 end
