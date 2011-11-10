@@ -4,12 +4,12 @@
 HttpRouter.new do
 
   # Posts
-  get('/posts').to(Posts::Index)
-  get('/posts/tags').to(Posts::TagIndex)
-  get('/posts/tags/:id').to(Posts::ShowTag)
-  get('/posts/:id').to(Posts::Show)
+  get('/posts').to(PostActions::Index)
+  get('/posts/tags').to(PostActions::TagIndex)
+  get('/posts/tags/:id').to(PostActions::ShowTag)
+  get('/posts/:id').to(PostActions::Show)
 
   # Data Sets
-  get('/*id').to(DataSets::Show)
+  get('/*id').to(DataSetActions::Show)
 
 end

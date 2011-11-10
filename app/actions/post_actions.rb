@@ -1,6 +1,6 @@
 require 'app/actions/base_action'
 
-module Posts
+module PostActions
 
   class Index < BaseAction
     def start

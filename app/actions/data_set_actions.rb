@@ -1,6 +1,6 @@
 require 'app/actions/base_action'
 
-module DataSets
+module DataSetActions
 
   class Show < BaseAction
     before_start :check_dataset_id
