@@ -83,6 +83,7 @@ class Post < Hash
     self[:id]     = uid
     self[:body]   = self.class.syntax_highlighter(markdown.render(raw))
     self[:source] = raw
+    self[:author] ||= About[:name]
   end
 
   def load_and_parse
