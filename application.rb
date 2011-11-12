@@ -3,7 +3,7 @@ require 'bundler'
 
 $:.unshift File.expand_path('..', __FILE__)
 
-module Emblog
+module JimehApi
   class Application
 
     def self.root(path = nil)
@@ -21,14 +21,14 @@ module Emblog
 
     # Initialize the application
     def self.initialize!
-      Post.initialize!(File.join(self.root, 'posts'))
       DataSet.initialize!(File.join(self.root, 'datasets'))
+      Post.initialize!(File.join(self.root, 'posts'))
     end
 
   end
 end
 
-Bundler.require(:default, Emblog::Application.env)
+Bundler.require(:default, JimehApi::Application.env)
 
 # Preload application classes
 Dir['./app/**/*.rb'].each {|f| require f}

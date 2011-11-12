@@ -1,8 +1,8 @@
 require './application'
-Emblog::Application.initialize!
+JimehApi::Application.initialize!
 
 # Development middlewares
-if Emblog::Application.env == 'development'
+if JimehApi::Application.env == 'development'
   use AsyncRack::CommonLogger
 
   # Enable code reloading on every request
@@ -22,4 +22,4 @@ end
 #
 #   bundle exec thin --max-persistent-conns 1024 --timeout 0 -V -R config.ru start
 #
-run Emblog::Application.routes
+run JimehApi::Application.routes
