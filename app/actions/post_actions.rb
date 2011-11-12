@@ -6,7 +6,7 @@ module PostActions
     def start
       posts = Post.all.inject([]) do |result, post|
         result << post.select { |k, _|
-          [:id, :date, :title, :slug].include?(k)
+          [:id, :date, :title].include?(k)
         }
       end
       render_as_json(posts.reverse)
@@ -54,7 +54,7 @@ module PostActions
     def start
       posts = Post.tags[params[:id].to_sym].inject([]) do |result, post|
         result << post.select { |k, _|
-          [:id, :date, :title, :slug].include?(k)
+          [:id, :date, :title].include?(k)
         }
         result
       end
